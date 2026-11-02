@@ -1,32 +1,24 @@
 {
   "version": "1.1.0",
   "build": {
-    "runtime": {
       "type": "cmake",
       "generator": "Ninja",
       "targets": {
         "build": [ "all" ],
-        "test": [ "test" ],
         "install": [ "install" ]
       },
       "vars": {
         "QELOQUENT_BUILD_TESTS": "OFF",
-        "QELOQUENT_BUILD_EXAMPLES": "OFF",
         "QELOQUENT_BUILD_DOC": "ON"
+      }
+    "runtime": {
+      "vars": {
+        "QELOQUENT_BUILD_EXAMPLES": "OFF"
       }
     },
     "dev": {
-      "type": "cmake",
-      "generator": "Ninja",
-      "targets": {
-        "build": [ "all" ],
-        "test": [ "test" ],
-        "install": [ "install" ]
-      },
       "vars": {
-        "QELOQUENT_BUILD_TESTS": "ON",
-        "QELOQUENT_BUILD_EXAMPLES": "ON",
-        "QELOQUENT_BUILD_DOC": "ON"
+        "QELOQUENT_BUILD_EXAMPLES": "ON"
       }
     }
   },
