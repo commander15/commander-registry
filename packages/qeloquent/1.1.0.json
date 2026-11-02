@@ -1,0 +1,64 @@
+{
+  "version": "1.1.0",
+  "build": {
+    "runtime": {
+      "type": "cmake",
+      "generator": "Ninja",
+      "targets": {
+        "build": [ "all" ],
+        "test": [ "test" ],
+        "install": [ "install" ]
+      },
+      "vars": {
+        "QELOQUENT_BUILD_TESTS": "OFF",
+        "QELOQUENT_BUILD_EXAMPLES": "OFF",
+        "QELOQUENT_BUILD_DOC": "ON"
+      }
+    },
+    "dev": {
+      "type": "cmake",
+      "generator": "Ninja",
+      "targets": {
+        "build": [ "all" ],
+        "test": [ "test" ],
+        "install": [ "install" ]
+      },
+      "vars": {
+        "QELOQUENT_BUILD_TESTS": "ON",
+        "QELOQUENT_BUILD_EXAMPLES": "ON",
+        "QELOQUENT_BUILD_DOC": "ON"
+      }
+    }
+  },
+  "artifacts": {
+    "source": {
+      "type": "git",
+      "repository": "https://github.com/commander15/QEloquent.git",
+      "tag": "v1.1.0"
+    },
+    "ubuntu-24.04-x86_64-tar": {
+      "type": "binary",
+      "system": "linux",
+      "arch": "amd64",
+      "toolchain": "gcc",
+      "url": "https://github.com/commander15/QEloquent/releases/download/v1.1.0/QEloquent-1.1.0-Linux.tar.gz",
+      "sha256": "sha256:b3cfe3f92d239f942c3f7d998fadd0b1b876ff0f6015fde73c5f7fd57c8686f8"
+    },
+    "ubuntu-24.04-x86_64-zip": {
+      "type": "binary",
+      "system": "linux",
+      "arch": "amd64",
+      "toolchain": "gcc",
+      "url": "https://github.com/commander15/QEloquent/releases/download/v1.1.0/QEloquent-1.1.0-Linux.zip",
+      "sha256": "sha256:b86eba5e2311a74a423c005cfd37cec2f928fe5134d2bb1df19e9a93efb38da6"
+    },
+    "windows-msvc2022-x86_64": {
+      "type": "binary",
+      "system": "windows",
+      "arch": "x86_64",
+      "toolchain": "msvc_2022",
+      "url": "https://github.com/commander15/QEloquent/releases/download/v1.1.0/QEloquent-1.1.0-win64.zip",
+      "sha256": "sha256:b86eba5e2311a74a423c005cfd37cec2f928fe5134d2bb1df19e9a93efb38da6"
+    }
+  }
+}

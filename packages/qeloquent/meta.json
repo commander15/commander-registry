@@ -1,0 +1,6 @@
+{
+  "name": "qeloquent",
+  "display_name": "QEloquent",
+  "description": "Laravel Eloquent ORM equivalent for Qt6/C++ with migrations and seeding",
+  "repository": "https://github.com/commander15/QEloquent"
+}
