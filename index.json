@@ -1,0 +1,23 @@
+{
+  "registry_version": 1,
+  "updated_at": "2026-11-02T07:58:20.807454+00:00",
+  "packages": {
+    "qeloquent": {
+      "display_name": "QEloquent",
+      "description": "Laravel Eloquent ORM equivalent for Qt6/C++ with migrations and seeding",
+      "latest": "1.1.0",
+      "versions": [
+        "1.1.0",
+        "1.0.0"
+      ]
+    },
+    "restlink": {
+      "display_name": "RestLink",
+      "description": "THE REST Client Library",
+      "latest": "2.2.4",
+      "versions": [
+        "2.2.4"
+      ]
+    }
+  }
+}
