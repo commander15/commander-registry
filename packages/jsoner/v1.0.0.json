@@ -1,0 +1,20 @@
+{
+    "version": "1.0.0",
+    "build": {
+        "type": "cmake",
+        "targets": {
+            "build": [ "all" ],
+            "install": [ "install" ]
+        },
+        "vars": {
+            "JSONER_BUILD_QML": "ON"
+        }
+    },
+    "artifacts": {
+        "source": {
+            "type": "git",
+            "repository": "https://github.com/commander15/Jsoner.git",
+            "tag": "v1.0.0"
+        }
+    }
+}

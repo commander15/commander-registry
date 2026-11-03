@@ -1,0 +1,5 @@
+{
+  "name": "datagate",
+  "display_name": "DataGate",
+  "description": "Data handling toolkit for Qt"
+}

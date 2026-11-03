@@ -40,6 +40,8 @@ def main():
         for filename in os.listdir(pkg_path):
             if filename.endswith(".json") and filename != "meta.json":
                 version_str = filename[:-5]  # Strip '.json'
+                if version_str.startswith('v'):
+                    version_str = version_str.removeprefix('v')
                 versions.append(version_str)
 
         if not versions:

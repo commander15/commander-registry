@@ -1,0 +1,40 @@
+{
+  "version": "2.1.0",
+  "dependencies": {
+    "datagate": "3.0.0"
+  },
+  "build": {
+    "type": "cmake",
+    "targets": {
+      "build": "all",
+      "install": "install",
+      "_package": "package"
+    },
+    "vars": {
+        "WIDGETRY_BUILD_TESTS": "OFF",
+        "WIDGETRY_BUILD_DOCS": "ON",
+        "WIDGETRY_BUILD_TRANSLATIONS": "ON",
+        "WIDGETRY_INSTALL": "ON",
+        "BUILD_SHARED_LIBS": "ON"
+    },
+    "runtime": {
+        "vars": {
+            "WIDGETRY_BUILD_EXAMPLES": "OFF",
+            "CMAKE_BUILD_TYPE": "Release"
+        }
+    },
+    "dev": {
+      "vars": {
+        "WIDGETRY_BUILD_EXAMPLES": "ON",
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  },
+  "artifacts": {
+    "source": {
+        "type": "git",
+        "repository": "https://github.com/commander15/Widgetry.git",
+        "tag": "v2.1.0"
+    }
+  }
+}

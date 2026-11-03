@@ -1,0 +1,25 @@
+{
+    "version": "3.0.0",
+    "dependencies": {
+        "jsoner": "1.0.0"
+    },
+    "build": {
+        "type": "cmake",
+        "generator": "Ninja",
+        "vars": {
+            "DATAGATE_BUILD_TESTS": "OFF",
+            "DATAGATE_BUILD_DOCS": "ON",
+            "DATAGATE_BUILD_TRANSLATIONS": "ON",
+            "DATAGATE_INSTALL": "ON",
+            "BUILD_SHARED_LIBS": "ON",
+            "DATAGATE_BUILD_EXAMPLES": ""
+        }
+    },
+    "artifacts": {
+        "source": {
+            "type": "git",
+            "repository": "https://github.com/commander15/DataGate.git",
+            "tag": "v3.0.0"
+        }
+    }
+}
