@@ -4,9 +4,9 @@
     "type": "cmake",
     "generator": "Ninja",
     "targets": {
-      "build": "all",
-      "install": "install",
-      "_package": "package"
+      "build": ["all"],
+      "install": ["install"],
+      "_package": ["package"]
     },
     "vars": {
       "RESTLINK_BUILD_CLI": "ON",
