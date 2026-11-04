@@ -4,6 +4,8 @@ import socketserver
 import sys
 import os
 
+from update import main as update
+
 PORT = 8000
 
 if len(sys.argv) > 1:
@@ -39,6 +41,7 @@ def run(port=PORT):
         print(f" Press Ctrl+C to stop")
         print(f"==================================================")
         try:
+            update()
             httpd.serve_forever()
         except KeyboardInterrupt:
             print("\nServer stopped.")
